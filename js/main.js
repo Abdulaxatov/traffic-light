@@ -1,7 +1,7 @@
 const elTrafficLight = document.querySelector('.tarffic-light');
-const elRed = document.querySelector('.red');
-const elYellow = document.querySelector('.yellow');
-const elGreen = document.querySelector('.green');
+const elRed = document.querySelector('.red-circle');
+const elYellow = document.querySelector('.yellow-circle');
+const elGreen = document.querySelector('.green-circle');
 const elImg = document.querySelector('.tarffic-light-img');
 
 function startTrafficLight() {
@@ -66,8 +66,3 @@ startTrafficLight();
  setInterval(() => {
 	startTrafficLight();
 }, 10000);
-
-
-elStopBtn.addEventListener('click', () => {
-	clearTimeout(startTrafficLight());
-});
